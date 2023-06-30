@@ -11,6 +11,16 @@ export default function App() {
     latitudeDelta: 0.05,
     longitudeDelta: 0.05
   })
+  const [bathrooms, setBathrooms] = useState([]);
+
+  //change this to ur local ip
+  const host = 'http://192.168.1.8:3000'
+
+  async function logJSONData() {
+    const response = await fetch(`${host}/NYrestrooms`);
+    const jsonData = await response.json();
+    setBathrooms(jsonData)
+  }
 
   //function to request location permission and set mapRegion state if allowed.
   const userLocation = async () => {
@@ -27,6 +37,10 @@ export default function App() {
     })
   }
 
+  //getting bathrooms
+  useEffect(() => {
+    logJSONData();
+  }, [])
   //request location on bootup
   useEffect(() => {userLocation()}, [])
 
@@ -36,6 +50,10 @@ export default function App() {
         region={mapRegion}
       >
         <Marker coordinate={mapRegion} title='Marker' />
+        {bathrooms.length && <Marker coordinate={{
+          latitude: bathrooms[0].latitude,
+          longitude: bathrooms[0].longitude
+        }}/>}
       </MapView>
     </View>
   );
