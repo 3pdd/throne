@@ -3,6 +3,21 @@ const db = require('../database');
 
 module.exports = {
 
-  getAllRestrooms: async () => {}
+  getAllRestrooms: async () => {
+    try {
+      const restroomsRef = collection(db, 'NYC');
+      const snapshot = await getDocs(restroomsRef);
+
+      const restrooms = [];
+      snapshot.forEach((doc) => {
+        restrooms.push(doc.data());
+      });
+
+      return restrooms;
+    } catch (error) {
+      console.error('Error getting restrooms:', error);
+      throw error;
+    }
+  }
 
 }
