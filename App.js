@@ -14,7 +14,7 @@ export default function App() {
   const [bathrooms, setBathrooms] = useState([]);
 
   //change this to ur local ip
-  const host = 'http://192.168.1.8:3000'
+  const host = 'http://10.5.0.2:3000';
 
   async function logJSONData() {
     const response = await fetch(`${host}/NYrestrooms`);
@@ -50,10 +50,10 @@ export default function App() {
         region={mapRegion}
       >
         <Marker coordinate={mapRegion} title='Marker' />
-        {bathrooms.length && <Marker coordinate={{
+        {bathrooms.length ? <Marker coordinate={{
           latitude: bathrooms[0].latitude,
           longitude: bathrooms[0].longitude
-        }}/>}
+        }}/> : null}
       </MapView>
     </View>
   );
