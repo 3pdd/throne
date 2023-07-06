@@ -1,32 +1,34 @@
 const { doc, addDoc, collection } = require('firebase/firestore')
 const db = require('../database');
+const axios = require('axios')
+const { data } = require('../../data.js')
 
-
-//add real bathrooms into the 'data' array below
-const data = [
-  {
-    name: 'new test',
-    latitude: 40.73066,
-    longitude: -73.935222
-  },
-  {
-    name: 'another new test',
-    latitude: 40.73067,
-    longitude: -73.935221
-  }
-]
-
-const addRestrooms = async () => {
+const addRestroom = async (newRestroom) => {
   try {
     const restroomsRef = collection(db, 'NYC');
-    data.forEach(bathroom => {
-      addDoc(restroomsRef, bathroom)
-    })
-
+    addDoc(restroomsRef, newRestroom)
   } catch (error) {
     console.error('Error adding restrooms:', error);
     throw error;
   }
 }
 
-addRestrooms();
+const getLatLon = () => {
+  data.forEach(loc => {
+    axios.get(`http://localhost:3000/coordinates/${loc.address}`)
+      .then(res => {
+        return (
+          {
+            name: loc.name,
+            latitude: res.data.latitude,
+            longitude: res.data.longitude
+          }
+        )
+      })
+      .then(res => {
+        addRestroom(res)
+      })
+  })
+}
+
+getLatLon();

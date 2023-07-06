@@ -14,7 +14,7 @@ export default function App() {
   const [bathrooms, setBathrooms] = useState([]);
 
   //change this to ur local ip
-  const host = 'http://10.5.0.2:3000';
+  const host = 'http://192.168.0.208:3000';
 
   async function logJSONData() {
     const response = await fetch(`${host}/NYrestrooms`);
@@ -25,9 +25,6 @@ export default function App() {
   //function to request location permission and set mapRegion state if allowed.
   const userLocation = async () => {
     let {status} = await Location.requestForegroundPermissionsAsync();
-    if (status !== 'granted') {
-      setErrorMsg('Permission to access location was denied');
-    }
     let location = await Location.getCurrentPositionAsync({enableHighAccuracy: true})
     setMapRegion({
       latitude: location.coords.latitude,
@@ -50,10 +47,14 @@ export default function App() {
         region={mapRegion}
       >
         <Marker coordinate={mapRegion} title='Marker' />
-        {bathrooms.length ? <Marker coordinate={{
-          latitude: bathrooms[0].latitude,
-          longitude: bathrooms[0].longitude
-        }}/> : null}
+        {bathrooms.length ?
+          bathrooms.map(bathroom => (
+          <Marker key={`${bathroom.latitude}${bathroom.longitude}`} coordinate={{
+            latitude: bathroom.latitude,
+            longitude: bathroom.longitude
+          }}
+        />))
+        : null}
       </MapView>
     </View>
   );

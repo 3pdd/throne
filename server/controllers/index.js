@@ -1,6 +1,7 @@
+require('dotenv').config();
 const models = require('../models');
 const axios = require('axios');
-const apiKey = 'AIzaSyC3cCZGHIckECdm4WZ4Tj4HyROrniXCsMI';
+const apiKey = process.env.GAPIKEY;
 
 
 module.exports = {
