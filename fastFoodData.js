@@ -483,6 +483,202 @@ module.exports = {
     {
       "name": "McDonald's",
       "address": "317 Broadway"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "4009 Broadway"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "2298 Broadway"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "1020 3rd Ave"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "150 E 52nd St"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "28 W 40th St"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "604 2nd Ave"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "234 5th Ave"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "504 Ave of the Americas"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "24 E 12th St"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "1 Metrotech Center, Brooklyn"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "1288 1st Ave"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "463 86th At, Broadway"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "1379 Ave of the Americas"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "281 Broadway"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "283 7th Ave"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "350 5th Ave #4-5"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "320 Park Ave"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "274 Madison Ave"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "235 W 56th St"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "854 8th Ave"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "129 W 48th St"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "269 Amsterdam Ave"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "200 Varick St"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "125 E 23rd St"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "864 Broadway"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "101 Fulton St #111"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "620 9th Ave"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "149 8th Ave"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "464 Park Ave S"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "25 W 45th St"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "2 Broadway"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "304 W 34th St"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "9 W 42nd St"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "625 Broadway"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "19 St Marks Pl"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "501 7th Ave"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "405 Ave of the Americas"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "117 E 14th St, Manhattan"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "140 Court St, Brooklyn"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "100 Maiden Ln"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "55 E 8th St"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "680 Ave of the Americas"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "275 Greenwich St"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "71 Spring St"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "625 Broadway"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "1153 3rd Ave"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "185 Montague St"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "1497 3rd Ave"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "address": "2843 Broadway, New York, NY 10025"
     }
   ]
 }
